@@ -4,11 +4,7 @@ import google.generativeai as genai
 from PIL import Image
 import os
 
-from dotenv import load_dotenv
-
 app = Flask(__name__)
-
-
 
 api_key = os.getenv("API_KEY")
 genai.configure(api_key = api_key)
