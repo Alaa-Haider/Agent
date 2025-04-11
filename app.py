@@ -33,7 +33,7 @@ def upload():
 
 if __name__ == "__main__":
     debug_mode = os.getenv("DEBUG", "False").lower() == "true"
-    host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 8080))  # Railway sets PORT automatically
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", 8000))  # Railway sets PORT automatically
 
     app.run(debug=debug_mode, host=host, port=port)
