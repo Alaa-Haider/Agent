@@ -1,1 +1,1 @@
-web: gunicorn --chdir final/Agent app:app
+web: gunicorn app:app
