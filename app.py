@@ -32,10 +32,8 @@ def upload():
     return render_template("upload.html")  # Load the upload form
 
 if __name__ == "__main__":
-
-    # Load configuration from environment variables
-    debug_mode = os.getenv("DEBUG", "True").lower() == "true"
+    debug_mode = os.getenv("DEBUG", "False").lower() == "true"
     host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 8080))
+    port = int(os.getenv("PORT", 8080))  # Railway sets PORT automatically
 
     app.run(debug=debug_mode, host=host, port=port)
