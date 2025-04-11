@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-section h2 {
+            color: #34495e;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .report-section p {
+            color: #34495e;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .findings-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .findings-list li {
+            margin-bottom: 1rem;
+        }
+
+        .findings-list strong {
+            color: #e74c3c; /* Red for emphasis */
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .report-section h2 {
+                font-size: 1.3rem;
+            }
+
+            .report-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+
+        <!-- Image Section
+        <div class="image-section">
+            <img src="{{ image_path }}" alt="Uploaded X-Ray">
+        </div> -->
+
+        <!-- Report Section -->
+        <div class="report-section">
+            <h2>Findings:</h2>
+            <ul class="findings-list">
+                <li><strong>Increased interstitial markings:</strong> There is an increase in the fine, lacy pattern throughout both lungs, more prominent in the lower lung zones. This can suggest a variety of processes, including pulmonary fibrosis, interstitial lung disease (ILD), or chronic lung changes.</li>
+                <li><strong>Mildly prominent hilar markings:</strong> The areas where the bronchi and blood vessels enter the lungs (hila) appear slightly enlarged, which can be seen in a number of conditions like sarcoidosis, lymphoma, or other infections. However, it could be within normal limits for some individuals.</li>
+                <li><strong>Possible subtle pleural thickening:</strong> There might be subtle thickening of the pleura (the lining of the lungs) particularly in the right lower zone. This can be associated with prior infection, inflammation, or asbestos exposure (though not definitively seen here).</li>
+                <li><strong>No obvious focal consolidation or masses:</strong> I do not appreciate any obvious areas of dense consolidation (suggesting pneumonia) or distinct masses.</li>
+                <li><strong>Heart size appears normal:</strong> The cardiac silhouette is within normal limits.</li>
+                <li><strong>No pneumothorax or pleural effusion:</strong> There is no evidence of air or fluid in the pleural space.</li>
+                <li><strong>Bones appear unremarkable:</strong> The visible bony structures appear normal.</li>
+                <li><strong>Differential Diagnosis (Possible Causes):</strong> Given these findings, several possibilities need to be considered:
+                    <ul>
+                        <li><strong>Interstitial Lung Disease (ILD):</strong> This is high on the differential given the increased interstitial markings.</li>
+                        <li><strong>Chronic Lung Changes:</strong> Long-term smoking or environmental exposures could contribute to the observed patterns.</li>
+                        <li><strong>Infectious Processes:</strong> While less likely without focal consolidations, infections cannot be entirely ruled out.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Link -->
+        <a href="/" class="back-link">Upload Another Image</a>
+    </div>
+</body>
+</html>
